@@ -15,3 +15,16 @@
     = form.text_area :content
   .actions
     = form.submit
+      .wrapper_content
+    .wrapper_content__inner
+      %input#click{:type => 'checkbox'}
+      %label{:for => 'click'}
+        .favourite
+          .spinner
+            -(1..180).each do
+              .spinner_part
+          .favourite_heart
+            .favourite_heart__left
+            .favourite_heart__right
+          .favourite_text
+            %span Favourite this
